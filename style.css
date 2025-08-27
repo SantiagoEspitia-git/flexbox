@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Color de fondo original */
+    line-height: 1.6;
+}
+
+.header-general {
+    background: #333; /* Color de fondo del header original */
+    color: #fff;
+    padding: 1rem 2rem;
+    position: relative;
+    text-align: center;
+}
+
+.logo-pagina {
+    margin: 0;
+    display: inline-block;
+}
+
+.navegacion-principal {
+    display: block;
+    margin-top: 10px;
+}
+
+.navegacion-principal a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+/* Sección principal */
+.contenedor-principal {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+}
+
+/* Sección Hero */
+.seccion-hero {
+    background: #5a7d9a; /* Color de fondo del Hero original */
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.texto-hero {
+    max-width: 800px;
+    margin: auto;
+}
+
+.boton-llamar-a-la-accion {
+    background: #ff5722; /* Color de los botones original */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* Sección de características - USANDO CSS GRID */
+.seccion-caracteristicas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 2rem 0;
+}
+
+.tarjeta-caracteristica {
+    background: #fff; /* Color de fondo de las tarjetas original */
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de Llamada a la Acción */
+.seccion-llamada-a-la-accion {
+    background: #e9ecef; /* Color de fondo del CTA original */
+    text-align: center;
+    padding: 3rem 2rem;
+    margin-top: 2rem;
+}
+
+
+
+/* Media Queries para hacerlo responsivo */
+@media (max-width: 768px) {
+    .seccion-caracteristicas {
+        grid-template-columns: 1fr;
+    }
+
+    .navegacion-principal a {
+        display: block;
+        margin: 5px 0;
+    }
+}
